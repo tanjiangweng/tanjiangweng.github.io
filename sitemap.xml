@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>https://tanjiangweng.github.io/zh-cn/sitemap.xml</loc>
+    <loc>http://localhost:1313/zh-cn/sitemap.xml</loc>
     
-      <lastmod>2025-01-19T21:07:42+08:00</lastmod>
+      <lastmod>2025-01-19T21:43:04+08:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>https://tanjiangweng.github.io/en/sitemap.xml</loc>
+    <loc>http://localhost:1313/en/sitemap.xml</loc>
     
       <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     

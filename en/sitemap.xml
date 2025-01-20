@@ -2,94 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/en/categories/</loc>
+    <loc>https://tanjiangweng.github.io/en/categories/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/categories/"
+                href="https://tanjiangweng.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/"
+                href="https://tanjiangweng.github.io/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/p/test-chinese/</loc>
+    <loc>https://tanjiangweng.github.io/en/p/test-chinese/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/p/test-chinese/"
+                href="https://tanjiangweng.github.io/p/test-chinese/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/p/test-chinese/"
+                href="https://tanjiangweng.github.io/en/p/test-chinese/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/post/</loc>
+    <loc>https://tanjiangweng.github.io/en/post/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/post/"
+                href="https://tanjiangweng.github.io/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/post/"
+                href="https://tanjiangweng.github.io/en/post/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/test/</loc>
+    <loc>https://tanjiangweng.github.io/en/categories/test/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/categories/test/"
+                href="https://tanjiangweng.github.io/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/test/"
+                href="https://tanjiangweng.github.io/en/categories/test/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/</loc>
+    <loc>https://tanjiangweng.github.io/en/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/"
+                href="https://tanjiangweng.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/"
+                href="https://tanjiangweng.github.io/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://tanjiangweng.github.io/en/categories/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/categories/%E6%B5%8B%E8%AF%95/"
+                href="https://tanjiangweng.github.io/categories/%E6%B5%8B%E8%AF%95/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/%E6%B5%8B%E8%AF%95/"
+                href="https://tanjiangweng.github.io/en/categories/%E6%B5%8B%E8%AF%95/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/</loc>
+    <loc>https://tanjiangweng.github.io/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="http://localhost:1313/tags/"
+                href="https://tanjiangweng.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/"
+                href="https://tanjiangweng.github.io/en/tags/"
                 />
   </url>
 </urlset>

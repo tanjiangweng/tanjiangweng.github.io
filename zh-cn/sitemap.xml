@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tanjiangweng.github.io/</loc>
-    <lastmod>2025-01-20T09:43:11+08:00</lastmod>
+    <lastmod>2025-01-20T10:51:47+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,8 +15,11 @@
                 href="https://tanjiangweng.github.io/"
                 />
   </url><url>
+    <loc>https://tanjiangweng.github.io/p/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2025-01-20T10:51:47+08:00</lastmod>
+  </url><url>
     <loc>https://tanjiangweng.github.io/post/</loc>
-    <lastmod>2025-01-20T09:43:11+08:00</lastmod>
+    <lastmod>2025-01-20T10:51:47+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -28,11 +31,8 @@
                 href="https://tanjiangweng.github.io/post/"
                 />
   </url><url>
-    <loc>https://tanjiangweng.github.io/p/shifou/</loc>
-    <lastmod>2025-01-20T09:43:11+08:00</lastmod>
-  </url><url>
-    <loc>https://tanjiangweng.github.io/p/%E6%8E%A2%E7%B4%A24/</loc>
-    <lastmod>2025-01-20T09:29:24+08:00</lastmod>
+    <loc>https://tanjiangweng.github.io/p/myfirstblog/</loc>
+    <lastmod>2025-01-19T13:18:18+08:00</lastmod>
   </url><url>
     <loc>https://tanjiangweng.github.io/categories/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>

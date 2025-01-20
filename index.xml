@@ -7,21 +7,23 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>檀江翁-tanjiangweng copyright</copyright>
-        <lastBuildDate>Mon, 20 Jan 2025 09:43:11 +0800</lastBuildDate><atom:link href="https://tanjiangweng.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Shifou</title>
-        <link>https://tanjiangweng.github.io/p/shifou/</link>
-        <pubDate>Mon, 20 Jan 2025 09:43:11 +0800</pubDate>
+        <lastBuildDate>Mon, 20 Jan 2025 10:51:47 +0800</lastBuildDate><atom:link href="https://tanjiangweng.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Markdown基础语法</title>
+        <link>https://tanjiangweng.github.io/p/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</link>
+        <pubDate>Mon, 20 Jan 2025 10:51:47 +0800</pubDate>
         
-        <guid>https://tanjiangweng.github.io/p/shifou/</guid>
+        <guid>https://tanjiangweng.github.io/p/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</guid>
         <description></description>
         </item>
         <item>
-        <title>探索4</title>
-        <link>https://tanjiangweng.github.io/p/%E6%8E%A2%E7%B4%A24/</link>
-        <pubDate>Mon, 20 Jan 2025 09:29:24 +0800</pubDate>
+        <title>Myfirstblog</title>
+        <link>https://tanjiangweng.github.io/p/myfirstblog/</link>
+        <pubDate>Sun, 19 Jan 2025 13:18:18 +0800</pubDate>
         
-        <guid>https://tanjiangweng.github.io/p/%E6%8E%A2%E7%B4%A24/</guid>
-        <description></description>
+        <guid>https://tanjiangweng.github.io/p/myfirstblog/</guid>
+        <description>&lt;h3 id=&#34;hello-world&#34;&gt;hello world
+&lt;/h3&gt;&lt;p&gt;你好啊&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Chinese Test</title>

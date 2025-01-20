@@ -7,7 +7,1254 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>檀江翁-tanjiangweng copyright</copyright>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://tanjiangweng.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 20 Jan 2025 08:58:55 +0800</lastBuildDate><atom:link href="https://tanjiangweng.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>探索文件</title>
+        <link>https://tanjiangweng.github.io/p/%E6%8E%A2%E7%B4%A2%E6%96%87%E4%BB%B6/</link>
+        <pubDate>Mon, 20 Jan 2025 08:58:55 +0800</pubDate>
+        
+        <guid>https://tanjiangweng.github.io/p/%E6%8E%A2%E7%B4%A2%E6%96%87%E4%BB%B6/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Markdown基础语法</title>
+        <link>https://tanjiangweng.github.io/p/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</link>
+        <pubDate>Mon, 20 Jan 2025 08:11:57 +0800</pubDate>
+        
+        <guid>https://tanjiangweng.github.io/p/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</guid>
+        <description>&lt;h1 id=&#34;markdown-基本语法&#34;&gt;Markdown 基本语法
+&lt;/h1&gt;&lt;p&gt;Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia、简书等。&lt;/p&gt;
+&lt;p&gt;在线体验一下 &lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/editor/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown在线编辑器 (opens new window)&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;千万不要被「标记」、「语言」吓到，Markdown的语法十分简单，常用的标记符号不超过十个，用于日常写作记录绰绰有余，不到半小时就能完全掌握。&lt;/p&gt;
+&lt;p&gt;就是这十个不到的标记符号，却能让人&lt;strong&gt;优雅地沉浸式记录，专注内容而不是纠结排版&lt;/strong&gt;，达到「心中无尘，码字入神」的境界。&lt;/p&gt;
+&lt;p&gt;让我们从 &lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/headings.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown 标题语法 (opens new window)&lt;/a&gt;开始学习吧。&lt;/p&gt;
+&lt;h1 id=&#34;1markdown-标题语法&#34;&gt;1.Markdown 标题语法
+&lt;/h1&gt;&lt;p&gt;要创建标题，请在单词或短语前面添加井号&lt;code&gt;#&lt;/code&gt;) 。&lt;code&gt;#&lt;/code&gt; 的数量代表了标题的级别。例如，添加三个 &lt;code&gt;#&lt;/code&gt; 表示创建一个三级标题 (&lt;code&gt;&amp;lt;h3&amp;gt;&lt;/code&gt;) (例如：&lt;code&gt;### My Header&lt;/code&gt;)。或者用&lt;code&gt;ctrl&lt;/code&gt;+数字表示标题级别  &lt;code&gt;这个符号可实现高亮&lt;/code&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Markdown语法&lt;/th&gt;
+          &lt;th&gt;HTML&lt;/th&gt;
+          &lt;th&gt;预览效果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;# Heading level 1&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Heading level 1&amp;lt;/h1&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Heading level 1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;## Heading level 2&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;h2&amp;gt;Heading level 2&amp;lt;/h2&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Heading level 2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;### Heading level 3&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;h3&amp;gt;Heading level 3&amp;lt;/h3&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Heading level 3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;#### Heading level 4&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;h4&amp;gt;Heading level 4&amp;lt;/h4&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Heading level 4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;##### Heading level 5&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;h5&amp;gt;Heading level 5&amp;lt;/h5&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Heading level 5&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;###### Heading level 6&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;h6&amp;gt;Heading level 6&amp;lt;/h6&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Heading level 6&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;h1 id=&#34;一级标题&#34;&gt;一级标题
+&lt;/h1&gt;&lt;h2 id=&#34;二级标题&#34;&gt;二级标题
+&lt;/h2&gt;&lt;h3 id=&#34;三级标题&#34;&gt;三级标题
+&lt;/h3&gt;&lt;h4 id=&#34;四级标题&#34;&gt;四级标题
+&lt;/h4&gt;&lt;h5 id=&#34;五级标题&#34;&gt;五级标题
+&lt;/h5&gt;&lt;h6 id=&#34;六级标题&#34;&gt;六级标题
+&lt;/h6&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;httpsmarkdowncomcnbasic-syntaxheadingshtml可选语法可选语法&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/headings.html#%e5%8f%af%e9%80%89%e8%af%ad%e6%b3%95&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;可选语法
+&lt;/h2&gt;&lt;p&gt;还可以在文本下方添加任意数量的 == 号来标识一级标题，或者 &amp;ndash; 号来标识二级标题。(这里使用时无效)&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Markdown语法&lt;/th&gt;
+          &lt;th&gt;HTML&lt;/th&gt;
+          &lt;th&gt;预览效果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;Heading level 1===============&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Heading level 1&amp;lt;/h1&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Heading level 1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;Heading level 2---------------&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;h2&amp;gt;Heading level 2&amp;lt;/h2&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Heading level 2&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;httpsmarkdowncomcnbasic-syntaxheadingshtml最佳实践最佳实践&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/headings.html#%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;最佳实践
+&lt;/h2&gt;&lt;p&gt;不同的 Markdown 应用程序处理 &lt;code&gt;#&lt;/code&gt; 和标题之间的空格方式并不一致。为了兼容考虑，请用一个空格在 &lt;code&gt;#&lt;/code&gt; 和标题之间进行分隔。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;✅ Do this&lt;/th&gt;
+          &lt;th&gt;❌ Don&amp;rsquo;t do this&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;# Here&#39;s a Heading&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;#Here&#39;s a Heading&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;2markdown-段落&#34;&gt;2.Markdown 段落
+&lt;/h1&gt;&lt;p&gt;要创建段落，请使用空白行将一行或多行文本进行分隔。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Markdown语法&lt;/th&gt;
+          &lt;th&gt;HTML&lt;/th&gt;
+          &lt;th&gt;预览效果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;I really like using Markdown.I think I&#39;ll use it to format all of my documents from now on.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;p&amp;gt;I really like using Markdown.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;I think I&#39;ll use it to format all of my documents from now on.&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;I really like using Markdown.I think I&amp;rsquo;ll use it to format all of my documents from now on.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;httpsmarkdowncomcnbasic-syntaxparagraphshtml段落-paragraph-用法的最佳实段落paragraph用法的最佳实&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/paragraphs.html#%e6%ae%b5%e8%90%bd-paragraph-%e7%94%a8%e6%b3%95%e7%9a%84%e6%9c%80%e4%bd%b3%e5%ae%9e&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;段落（Paragraph）用法的最佳实
+&lt;/h2&gt;&lt;p&gt;不要用空格（spaces）或制表符（ tabs）缩进段落。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;✅ Do this&lt;/th&gt;
+          &lt;th&gt;❌ Don&amp;rsquo;t do this&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;Don&#39;t put tabs or spaces in front of your paragraphs.Keep lines left-aligned like this.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;  This can result in unexpected formatting problems. Don&#39;t add tabs or spaces in front of paragraphs.&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;3markdown-换行语法&#34;&gt;3.Markdown 换行语法
+&lt;/h1&gt;&lt;p&gt;在一行的末尾添加两个或多个空格，然后按回车键,即可创建一个换行(&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;)。(这里直接使用enter)&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Markdown语法&lt;/th&gt;
+          &lt;th&gt;HTML&lt;/th&gt;
+          &lt;th&gt;预览效果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;This is the first line.  And this is the second line.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;p&amp;gt;This is the first line.&amp;lt;br&amp;gt;And this is the second line.&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;This is the first line. And this is the second line.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;httpsmarkdowncomcnbasic-syntaxline-breakshtml换行-line-break-用法的最佳实践换行line-break用法的最佳实践&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/line-breaks.html#%e6%8d%a2%e8%a1%8c-line-break-%e7%94%a8%e6%b3%95%e7%9a%84%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;换行（Line Break）用法的最佳实践
+&lt;/h2&gt;&lt;p&gt;几乎每个 Markdown 应用程序都支持两个或多个空格进行换行，称为 &lt;code&gt;结尾空格（trailing whitespace)&lt;/code&gt; 的方式，但这是有争议的，因为很难在编辑器中直接看到空格，并且很多人在每个句子后面都会有意或无意地添加两个空格。由于这个原因，你可能要使用除结尾空格以外的其它方式来换行。幸运的是，几乎每个 Markdown 应用程序都支持另一种换行方式：HTML 的 &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt; 标签。&lt;/p&gt;
+&lt;p&gt;为了兼容性，请在行尾添加“结尾空格”或 HTML 的 &lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt; 标签来实现换行。&lt;/p&gt;
+&lt;p&gt;还有两种其他方式我并不推荐使用。CommonMark 和其它几种轻量级标记语言支持在行尾添加反斜杠 (&lt;code&gt;\&lt;/code&gt;) 的方式实现换行，但是并非所有 Markdown 应用程序都支持此种方式，因此从兼容性的角度来看，不推荐使用。并且至少有两种轻量级标记语言支持无须在行尾添加任何内容，只须键入回车键（&lt;code&gt;return&lt;/code&gt;）即可实现换行。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;✅ Do this&lt;/th&gt;
+          &lt;th&gt;❌ Don&amp;rsquo;t do this&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;First line with two spaces after.  And the next line.First line with the HTML tag after.&amp;lt;br&amp;gt;And the next line.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;First line with a backslash after.\And the next line.First line with nothing after.And the next line.&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;4markdown-强调语法&#34;&gt;4.Markdown 强调语法
+&lt;/h1&gt;&lt;p&gt;通过将文本设置为粗体或斜体来强调其重要性。&lt;/p&gt;
+&lt;h2 id=&#34;httpsmarkdowncomcnbasic-syntaxemphasishtml粗体-bold粗体bold&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/emphasis.html#%e7%b2%97%e4%bd%93-bold&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;粗体（Bold）
+&lt;/h2&gt;&lt;p&gt;要加粗文本，请在单词或短语的前后各添加两个星号（asterisks）或下划线（underscores）。如需加粗一个单词或短语的中间部分用以表示强调的话，请在要加粗部分的两侧各添加两个星号（asterisks）。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Markdown语法&lt;/th&gt;
+          &lt;th&gt;HTML&lt;/th&gt;
+          &lt;th&gt;预览效果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;I just love **bold text**.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;I just love &amp;lt;strong&amp;gt;bold text&amp;lt;/strong&amp;gt;.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;I just love &lt;strong&gt;bold text&lt;/strong&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;I just love __bold text__.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;I just love &amp;lt;strong&amp;gt;bold text&amp;lt;/strong&amp;gt;.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;I just love &lt;strong&gt;bold text&lt;/strong&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;Love**is**bold&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;Love&amp;lt;strong&amp;gt;is&amp;lt;/strong&amp;gt;bold&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Love&lt;strong&gt;is&lt;/strong&gt;bold&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;加粗&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;加粗&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxemphasishtml粗体-bold-用法最佳实践粗体bold用法最佳实践&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/emphasis.html#%e7%b2%97%e4%bd%93-bold-%e7%94%a8%e6%b3%95%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;粗体（Bold）用法最佳实践
+&lt;/h3&gt;&lt;p&gt;Markdown 应用程序在如何处理单词或短语中间的下划线上并不一致。为兼容考虑，在单词或短语中间部分加粗的话，请使用星号（asterisks）。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;✅ Do this&lt;/th&gt;
+          &lt;th&gt;❌ Don&amp;rsquo;t do this&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;Love**is**bold&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;Love__is__bold&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;Love__is__bold&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Love**is**blod&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;httpsmarkdowncomcnbasic-syntaxemphasishtml斜体-italic斜体italic&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/emphasis.html#%e6%96%9c%e4%bd%93-italic&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;斜体（Italic）
+&lt;/h2&gt;&lt;p&gt;要用斜体显示文本，请在单词或短语前后添加一个星号（asterisk）或下划线（underscore）。要斜体突出单词的中间部分，请在字母前后各添加一个星号，中间不要带空格。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Markdown语法&lt;/th&gt;
+          &lt;th&gt;HTML&lt;/th&gt;
+          &lt;th&gt;预览效果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;Italicized text is the *cat&#39;s meow*.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;Italicized text is the &amp;lt;em&amp;gt;cat&#39;s meow&amp;lt;/em&amp;gt;.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Italicized text is the &lt;em&gt;cat’s meow&lt;/em&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;Italicized text is the _cat&#39;s meow_.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;Italicized text is the &amp;lt;em&amp;gt;cat&#39;s meow&amp;lt;/em&amp;gt;.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;Italicized text is the &lt;em&gt;cat’s meow&lt;/em&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;A*cat*meow&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;A&amp;lt;em&amp;gt;cat&amp;lt;/em&amp;gt;meow&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;A&lt;em&gt;cat&lt;/em&gt;meow&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;*斜体*&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;``&lt;em&gt;斜体&lt;/em&gt;`&lt;/p&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxemphasishtml斜体-italic-用法的最佳实践斜体italic用法的最佳实践&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/emphasis.html#%e6%96%9c%e4%bd%93-italic-%e7%94%a8%e6%b3%95%e7%9a%84%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;斜体（Italic）用法的最佳实践
+&lt;/h3&gt;&lt;p&gt;要同时用粗体和斜体突出显示文本，请在单词或短语的前后各添加三个星号或下划线。要加粗并用斜体显示单词或短语的中间部分，请在要突出显示的部分前后各添加三个星号，中间不要带空格。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;✅ Do this&lt;/th&gt;
+          &lt;th&gt;❌ Don&amp;rsquo;t do this&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;A*cat*meow&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;A_cat_meow&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;httpsmarkdowncomcnbasic-syntaxemphasishtml粗体-bold-和斜体-italic粗体bold和斜体italic&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/emphasis.html#%e7%b2%97%e4%bd%93-bold-%e5%92%8c%e6%96%9c%e4%bd%93-italic&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;粗体（Bold）和斜体（Italic）
+&lt;/h2&gt;&lt;p&gt;要同时用粗体和斜体突出显示文本，请在单词或短语的前后各添加三个星号或下划线。要加粗并用斜体显示单词或短语的中间部分，请在要突出显示的部分前后各添加三个星号，中间不要带空格。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Markdown语法&lt;/th&gt;
+          &lt;th&gt;HTML&lt;/th&gt;
+          &lt;th&gt;预览效果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;This text is ***really important***.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;This text is &amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;really important&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;This text is *&lt;strong&gt;really important*&lt;/strong&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;This text is ___really important___.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;This text is &amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;really important&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;This text is *&lt;strong&gt;really important*&lt;/strong&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;This text is __*really important*__.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;This text is &amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;really important&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;This text is *&lt;strong&gt;really important*&lt;/strong&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;This text is **_really important_**.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;This text is &amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;really important&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;This text is *&lt;strong&gt;really important*&lt;/strong&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;This is really***very***important text.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;This is really&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;very&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;important text.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;This is really***very***important text.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;使用三个&lt;code&gt;**&lt;/code&gt;实现加粗和斜体&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;你好&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxemphasishtml粗体-bold-和斜体-italic-用法的最佳实践粗体bold和斜体italic用法的最佳实践&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/emphasis.html#%e7%b2%97%e4%bd%93-bold-%e5%92%8c%e6%96%9c%e4%bd%93-italic-%e7%94%a8%e6%b3%95%e7%9a%84%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;粗体（Bold）和斜体（Italic）用法的最佳实践
+&lt;/h3&gt;&lt;p&gt;Markdown 应用程序在处理单词或短语中间添加的下划线上并不一致。为了实现兼容性，请使用星号将单词或短语的中间部分加粗并以斜体显示，以示重要。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;✅ Do this&lt;/th&gt;
+          &lt;th&gt;❌ Don&amp;rsquo;t do this&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;This is really***very***important text.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;This is really___very___important text.&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;5markdown-引用语法&#34;&gt;5.Markdown 引用语法
+&lt;/h1&gt;&lt;p&gt;==要创建块引用，请在段落前添加一个 &lt;code&gt;&amp;gt;&lt;/code&gt; 符号==。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; Dorothy followed her through many of the beautiful rooms in her castle.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下所示：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;==Dorothy followed her through many of the beautiful rooms in her cast==&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;以下是我的实操&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxblockquoteshtml多个段落的块引用多个段落的块引用&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/blockquotes.html#%e5%a4%9a%e4%b8%aa%e6%ae%b5%e8%90%bd%e7%9a%84%e5%9d%97%e5%bc%95%e7%94%a8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;多个段落的块引用
+&lt;/h3&gt;&lt;p&gt;块引用可以包含多个段落。为段落之间的空白行添加一个 &lt;code&gt;&amp;gt;&lt;/code&gt; 符号。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; Dorothy followed her through many of the beautiful rooms in her castle.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dorothy followed her through many of the beautiful rooms in her castle.&lt;/p&gt;
+&lt;p&gt;The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxblockquoteshtml嵌套块引用嵌套块引用&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/blockquotes.html#%e5%b5%8c%e5%a5%97%e5%9d%97%e5%bc%95%e7%94%a8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;嵌套块引用
+&lt;/h3&gt;&lt;p&gt;块引用可以嵌套。在要嵌套的段落前添加一个 &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt; 符号。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; Dorothy followed her through many of the beautiful rooms in her castle.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt; The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dorothy followed her through many of the beautiful rooms in her castle.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxblockquoteshtml带有其它元素的块引用带有其它元素的块引用&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/blockquotes.html#%e5%b8%a6%e6%9c%89%e5%85%b6%e5%ae%83%e5%85%83%e7%b4%a0%e7%9a%84%e5%9d%97%e5%bc%95%e7%94%a8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;带有其它元素的块引用
+&lt;/h3&gt;&lt;p&gt;块引用可以包含其他 Markdown 格式的元素。并非所有元素都可以使用，你需要进行实验以查看哪些元素有效。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; #### The quarterly results look great!
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; - Revenue was off the chart.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt; - Profits were higher than ever.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;  *Everything* is going according to **plan**.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&#34;the-quarterly-results-look-great&#34;&gt;The quarterly results look great!
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Revenue was off the chart.&lt;/li&gt;
+&lt;li&gt;Profits were higher than ever.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Everything&lt;/em&gt; is going according to &lt;strong&gt;plan&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;6markdown-列表语法&#34;&gt;6.Markdown 列表语法
+&lt;/h1&gt;&lt;p&gt;可以将多个条目组织成有序或无序列表。&lt;/p&gt;
+&lt;h2 id=&#34;httpsmarkdowncomcnbasic-syntaxlistshtml有序列表有序列表&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/lists.html#%e6%9c%89%e5%ba%8f%e5%88%97%e8%a1%a8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;有序列表
+&lt;/h2&gt;&lt;p&gt;要创建有序列表，请在每个列表项前添加数字并紧跟一个英文句点。数字不必按数学顺序排列，但是列表应当以数字 1 起始。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Markdown语法&lt;/th&gt;
+          &lt;th&gt;HTML&lt;/th&gt;
+          &lt;th&gt;预览效果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;1. First item2. Second item3. Third item4. Fourth item&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;ol&amp;gt;&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Fourth item&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;First itemSecond itemThird itemFourth item&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;1. First item1. Second item1. Third item1. Fourth item&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;ol&amp;gt;&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Fourth item&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;First itemSecond itemThird itemFourth item&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;1. First item8. Second item3. Third item5. Fourth item&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;ol&amp;gt;&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Fourth item&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;First itemSecond itemThird itemFourth item&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;1. First item2. Second item3. Third item  1. Indented item  2. Indented item4. Fourth item&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;ol&amp;gt;&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Third item&amp;lt;ol&amp;gt;&amp;lt;li&amp;gt;Indented item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Indented item&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Fourth item&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;First itemSecond itemThird itemIndented itemIndented itemFourth item&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;httpsmarkdowncomcnbasic-syntaxlistshtml有序列表最佳实践有序列表最佳实践&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/lists.html#%e6%9c%89%e5%ba%8f%e5%88%97%e8%a1%a8%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;有序列表最佳实践
+&lt;/h4&gt;&lt;p&gt;CommonMark and a few other lightweight markup languages let you use a parenthesis (&lt;code&gt;)&lt;/code&gt;) as a delimiter (e.g., &lt;code&gt;1) First item&lt;/code&gt;), but not all Markdown applications support this, so it isn’t a great option from a compatibility perspective. For compatibility, use periods only.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;✅ Do this&lt;/th&gt;
+          &lt;th&gt;❌ Don&amp;rsquo;t do this&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;1. First item2. Second item&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;1) First item2) Second item&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;httpsmarkdowncomcnbasic-syntaxlistshtml无序列表无序列表&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/lists.html#%e6%97%a0%e5%ba%8f%e5%88%97%e8%a1%a8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;无序列表
+&lt;/h2&gt;&lt;p&gt;要创建无序列表，请在每个列表项前面添加破折号 (-)、星号 (*) 或加号 (+) 。缩进一个或多个列表项可创建嵌套列表。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Markdown语法&lt;/th&gt;
+          &lt;th&gt;HTML&lt;/th&gt;
+          &lt;th&gt;预览效果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;- First item- Second item- Third item- Fourth item&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Fourth item&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;First itemSecond itemThird itemFourth item&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;* First item* Second item* Third item* Fourth item&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Fourth item&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;First itemSecond itemThird itemFourth item&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;+ First item+ Second item+ Third item+ Fourth item&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Third item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Fourth item&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;First itemSecond itemThird itemFourth item&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;- First item- Second item- Third item  - Indented item  - Indented item- Fourth item&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;First item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Second item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Third item&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Indented item&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Indented item&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Fourth item&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;First itemSecond itemThird itemIndented itemIndented itemFourth item&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;httpsmarkdowncomcnbasic-syntaxlistshtml无序列表最佳实践无序列表最佳实践&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/lists.html#%e6%97%a0%e5%ba%8f%e5%88%97%e8%a1%a8%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;无序列表最佳实践
+&lt;/h4&gt;&lt;p&gt;Markdown applications don’t agree on how to handle different delimiters in the same list. For compatibility, don&amp;rsquo;t mix and match delimiters in the same list — pick one and stick with it.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;✅ Do this&lt;/th&gt;
+          &lt;th&gt;❌ Don&amp;rsquo;t do this&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;- First item- Second item- Third item- Fourth item&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;+ First item* Second item- Third item+ Fourth item&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxlistshtml在列表中嵌套其他元素在列表中嵌套其他元素&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/lists.html#%e5%9c%a8%e5%88%97%e8%a1%a8%e4%b8%ad%e5%b5%8c%e5%a5%97%e5%85%b6%e4%bb%96%e5%85%83%e7%b4%a0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;在列表中嵌套其他元素
+&lt;/h3&gt;&lt;p&gt;要在保留列表连续性的同时在列表中添加另一种元素，请将该元素缩进四个空格或一个制表符，如下例所示：&lt;/p&gt;
+&lt;h4 id=&#34;httpsmarkdowncomcnbasic-syntaxlistshtml段落段落&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/lists.html#%e6%ae%b5%e8%90%bd&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;段落
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*   This is the first list item.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*   Here&amp;#39;s the second list item.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    I need to add another paragraph below the second list item.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*   And here&amp;#39;s the third list item.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This is the first list item.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Here&amp;rsquo;s the second list item.&lt;/p&gt;
+&lt;p&gt;I need to add another paragraph below the second list item.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;And here&amp;rsquo;s the third list item.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;httpsmarkdowncomcnbasic-syntaxlistshtml引用块引用块&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/lists.html#%e5%bc%95%e7%94%a8%e5%9d%97&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;引用块
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*   This is the first list item.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*   Here&amp;#39;s the second list item.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;gt; A blockquote would look great below the second list item.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*   And here&amp;#39;s the third list item.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This is the first list item.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Here&amp;rsquo;s the second list item.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A blockquote would look great below the second list item.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;And here&amp;rsquo;s the third list item.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;httpsmarkdowncomcnbasic-syntaxlistshtml代码块代码块&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/lists.html#%e4%bb%a3%e7%a0%81%e5%9d%97&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;代码块
+&lt;/h4&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/lists.html#code-blocks&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;代码块&lt;/a&gt;通常采用四个空格或一个制表符缩进。当它们被放在列表中时，请将它们缩进八个空格或两个制表符。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1.  Open the file.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;2.  Find the following code block on line 21:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;amp;lt;html&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;amp;lt;head&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;amp;lt;title&amp;gt;Test&amp;amp;lt;/title&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &amp;amp;lt;/head&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;3.  Update the title to match the name of your website.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Find the following code block on line 21:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;amp;lt;html&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;amp;lt;head&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;amp;lt;title&amp;gt;Test&amp;amp;lt;/title&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;amp;lt;/head&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update the title to match the name of your website.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;httpsmarkdowncomcnbasic-syntaxlistshtml图片图片&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/lists.html#%e5%9b%be%e7%89%87&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;图片
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1.  Open the file containing the Linux mascot.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;2.  Marvel at its beauty.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ![Tux, the Linux mascot](/assets/images/tux.png)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;3.  Close the file.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Open the file containing the Linux mascot.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Marvel at its beauty.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAB5CAMAAAD4dHQjAAAArlBMVEX////Hx8ePj49XV1c7OzsfHx9JSUlzc3Orq6vx8fHj4&amp;#43;MtLS2BgYG5ubnV1dVlZWWdnZ3///9xXymZeBfClhWnghZwWxpzb2RVRxzdqhP4vhE6Mx2Mbxi0jBUtKR7qtBJxYzhXU0hJRTpIPRzPoBRjURt&amp;#43;ZRl&amp;#43;aShya1WBfXJyZ0b8/Pz5&amp;#43;fn9/f329vbu7u7p6enm5ubv7&amp;#43;/6&amp;#43;vro6Oj39/fz8/Ps7Oz09PTr6&amp;#43;uCz11jAAAAAXRSTlMAQObYZgAABuxJREFUeAG1mgd/ozwShy3gD4g&amp;#43;a/DZgsDeubwlcXq2fP8vdvEAgRCDUthne8EPoxkNI35ZfAhhmBZqbMeVi/nxHB&amp;#43;vcbyZFdLBGYJZHaGPs9gzrpmLIfNbQoxjz5VyH0Pmz4uJSaI5HALTmHNIYmiYYbtI6AhmKV8N1kyr9adTb0FL8mUJ9MSzFLA&amp;#43;KfNLbCcw0eerkqT&amp;#43;WNNHiy/oGc9Gh/iixGg&amp;#43;VjqtIyJG2vNKBJ2IwYTUIP2ZyoslZv9DbXrBQIvxdYlLNQ7Q/MFNOC1zSjyiMJFEIe/u2ubQM9aMEl4pp7lzIopamTmXJAGIXACSqJFwLoy&amp;#43;xPz6Zqw/VrxI4j8hEZyN0Pi2TNNs9R83aCXWjJKAq3e9UTVZ3uTEw1ySCLBOSSnUxbpQqlhfKFWUSDg3s7VhXpokU2pZVEpVxVIpVWXfDa83KRkzSPDfVA3ZFP/DrJJ1pc5QbWeTSGClzrDbqaqcKycCpcqqt47yQqn1fCW8Vau9GpCVmepJ/K/3rk213b&amp;#43;Kpdrn6emX2YZIB9irarXddYqiPLDzmz3XU8sCZ35ZFlVTuuVqw66/omSmU4rHef2&amp;#43;UZtVuS6KwzY/sEJlf3vkzTRE8s0aMjjlOc2Ki10dzuFv8eqpBecrEruZHdy/VEfxj0dMMMvAEgHNtBJ9awss/VdQQzTLUcjBCTrh/VOklUqX313qsGaYuj30pyAvMYwkopbBevnRl46kAY0Sff1IH4IJaRwb&amp;#43;FqFtXMoTZCgh/v5g1xME8gvnuvapLo0hYMevvzkqdeXNIX4yvucyEeNQ9NYwGeT3x1xBE2TfP4k7KDBIg3SxyeTH6IlIQ2c&amp;#43;sD9eFo8H13adXjcUzpL8JF2Yvj6tDMOW4IPdn3OpcV9ySM9og45RoMl391OhIP6TKqHAze7CjDe205iT1u/gw3phh&amp;#43;YkOpLvLgLRIszWDDzfY91R4y0rcur4/kCAwzv3bl360DMtxvxeH1ze3fi9v76eDYU572hWBxI9CaQh/u7Ho/3l29DSXShDALh2u9H0So65HFYYHbX&amp;#43;GN9ICb59QG35enx7i23D/RCWN/b&amp;#43;wrM7VWjpJYfd&amp;#43;e5HnT8hPR7pS0tn8N2qIWXSmMxwJd02143MTp8X2HfobV49TInaIk0jxFX9tMu7xidxeZrBPTr5ddJE73Vur6b5qG/XiT1w3EIhkS3SS4fNZLbIzFRHT1emJ6CTJZ4xPy803FDNT73OmiTYnUSi5hfd3quiIkBpy8Jx14MdJK43uiPd3puX5LikoQu86KVSMDQV9agwqQwJAmtxGglZCPkrOsFXShMZOkkAWqIEghdIINQ&amp;#43;Ih0usi1piUmagRJX&amp;#43;oyMgjFxQnf8Tg5WgkXidHfh3oeukntWRP5Wkk30f1&amp;#43;r&amp;#43;PxIUGHwRaNhEPp0q7n5igd9HB48YRGArfbiHruKfTxCleOP7Zi5EVR7Hnq1HWUjt/kgi/qMGn0gRJgValndts6lnfW1lWETBXo43hjx6EQ&amp;#43;/4rzFgeb97j&amp;#43;EnmXqkdhljh2eNCXqm&amp;#43;xQ95ftDxFGGnlMrRsUzTtMjPnSFs/r9Me2OxvNRX8dHI1TMZWsqseYeIYSwyxlL1WNUhR3SvX61DewWzbu&amp;#43;1yl/n3gt8HFSfDWpcnUUSMsUc8Mw&amp;#43;VS8U/eeWawPbVL2mQE2isfzw0F5apengRo1WEVnIDzs1oHt9bUxbrgQqNUJutg6fE/WWZbf7f09JXKgxVmhbSbkbuw80RFMTy6VRqjGWEHUgKNQIGRqskVmYIWOtxtg0W8VAqsZYo8E9fk6itr6sJWqUFA023YxLzAlJiriW7NRE4hrG1&amp;#43;uRO9coB&amp;#43;6TLlI1SpVrJLzhCzUB9xaBCzXODkxMvzUbfuI&amp;#43;fbmQdXVNVpgjr8Z7sMBGTZGetj32aooVQj4xanrwBFtrsbDWmv9j09NkD16paQroJVUZTBTwk8SFXuLhoKZJEY5Nkj8fKIDSkFuLBDulofDl5c05xRVF9nRK&amp;#43;fmYLMxSacktQVdDzf0V8WuLpZoiyxFoi4tJgTiiy1837ar9vn86UuTgxG5KsYZ/es6jUHrWAEzXI6KrZy6JKDIsMOVkFL4hF&amp;#43;&amp;#43;VZGDs2DCESIzA9NEyWpsXtYLBSumpMMrIPW7WjYIxy0rp&amp;#43;ahkCQSyfxbNL2aXrGBHwy9tLfdFlu70zVgvaR2OHM6OblznsVyvlunE4GLFRij4ak&amp;#43;4RmxyfR3OOhZD2qsCvqpcDT08bxpJ/fFD7FzvGCKSGNhevLlMjL/oW77Nx0KLNHzky6pXjXsEi1HscjdoVTGHrNdYwLpINyfDxWr6dWLk9y1Z2d2QltDx0RJzNU5ZijruKsthicVHiFzjRKgN3jOB9f6w3gJWt8lnRzg2ANMJF&amp;#43;f5P0W&amp;#43;bcQV1sTgAAAAAElFTkSuQmCC&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Tux, the Linux mascot&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Close the file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;httpsmarkdowncomcnbasic-syntaxlistshtml列表列表&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/lists.html#%e5%88%97%e8%a1%a8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;列表
+&lt;/h4&gt;&lt;p&gt;You can nest an unordered list in an ordered list, or vice versa.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1. First item
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;2. Second item
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;3. Third item
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - Indented item
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - Indented item
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;4. Fourth item
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item
+&lt;ul&gt;
+&lt;li&gt;Indented item&lt;/li&gt;
+&lt;li&gt;Indented item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fourth item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;7markdown-代码语法&#34;&gt;7.Markdown 代码语法
+&lt;/h1&gt;&lt;p&gt;要将单词或短语表示为代码，请将其包裹在反引号 (```) 中。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Markdown语法&lt;/th&gt;
+          &lt;th&gt;HTML&lt;/th&gt;
+          &lt;th&gt;预览效果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;At the command prompt, type &lt;/code&gt;nano&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;At the command prompt, type &amp;lt;code&amp;gt;nano&amp;lt;/code&amp;gt;.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;At the command prompt, type &lt;code&gt;nano&lt;/code&gt;.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxcodehtml转义反引号转义反引号&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/code.html#%e8%bd%ac%e4%b9%89%e5%8f%8d%e5%bc%95%e5%8f%b7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;转义反引号
+&lt;/h3&gt;&lt;p&gt;如果你要表示为代码的单词或短语中包含一个或多个反引号，则可以通过将单词或短语包裹在双反引号(````)中。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Markdown语法&lt;/th&gt;
+          &lt;th&gt;HTML&lt;/th&gt;
+          &lt;th&gt;预览效果&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;Use `code` in your Markdown file.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;&amp;lt;code&amp;gt;Use &lt;/code&gt;code&lt;code&gt; in your Markdown file.&amp;lt;/code&amp;gt;&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;Use &lt;/code&gt;code&lt;code&gt; in your Markdown file.&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxcodehtml代码块代码块&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/code.html#%e4%bb%a3%e7%a0%81%e5%9d%97&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;代码块
+&lt;/h3&gt;&lt;p&gt;要创建代码块，请将代码块的每一行缩进至少四个空格或一个制表符。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;amp;lt;html&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;amp;lt;head&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &amp;amp;lt;/head&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;amp;lt;/html&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;amp;lt;html&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;amp;lt;head&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &amp;amp;lt;/head&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;amp;lt;/html&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; 要创建不用缩进的代码块，请使用 &lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/extended-syntax/fenced-code-blocks.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;围栏式代码块（fenced code blocks）&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;8markdown-分隔线语法&#34;&gt;8.Markdown 分隔线语法
+&lt;/h1&gt;&lt;p&gt;要创建分隔线，请在单独一行上使用三个或多个星号 (&lt;code&gt;***&lt;/code&gt;)、破折号 (&lt;code&gt;---&lt;/code&gt;) 或下划线 (&lt;code&gt;___&lt;/code&gt;) ，并且不能包含其他内容。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;***
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;_________________
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;以上三个分隔线的渲染效果看起来都一样：&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxhorizontal-ruleshtml分隔线-horizontal-rule-用法最佳实践分隔线horizontal-rule用法最佳实践&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/horizontal-rules.html#%e5%88%86%e9%9a%94%e7%ba%bf-horizontal-rule-%e7%94%a8%e6%b3%95%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;分隔线（Horizontal Rule）用法最佳实践
+&lt;/h3&gt;&lt;p&gt;为了兼容性，请在分隔线的前后均添加空白行。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;✅ Do this&lt;/th&gt;
+          &lt;th&gt;❌ Don&amp;rsquo;t do this&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;Try to put a blank line before...---...and after a horizontal rule.&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;Without blank lines, this would be a heading.---Don&#39;t do this!&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;9markdown-链接语法&#34;&gt;9.Markdown 链接语法
+&lt;/h1&gt;&lt;p&gt;链接文本放在中括号内，链接地址放在后面的括号中，链接title可选。&lt;/p&gt;
+&lt;p&gt;超链接Markdown语法代码：&lt;code&gt;[超链接显示名](超链接地址 &amp;quot;超链接title&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;对应的HTML代码：&lt;code&gt;&amp;lt;a href=&amp;quot;超链接地址&amp;quot; title=&amp;quot;超链接title&amp;quot;&amp;gt;超链接显示名&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个链接 [Markdown语法](https://markdown.com.cn)。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;p&gt;这是一个链接 &lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown语法 (opens new window)&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxlinkshtml给链接增加-title给链接增加-title&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/links.html#%e7%bb%99%e9%93%be%e6%8e%a5%e5%a2%9e%e5%8a%a0-title&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;给链接增加 Title
+&lt;/h3&gt;&lt;p&gt;链接title是当鼠标悬停在链接上时会出现的文字，这个title是可选的，它放在圆括号中链接地址后面，跟链接地址之间以空格分隔。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个链接 [Markdown语法](https://markdown.com.cn &amp;#34;最好的markdown教程&amp;#34;)。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;p&gt;这是一个链接 &lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown语法 (opens new window)&lt;/a&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxlinkshtml网址和email地址网址和email地址&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/links.html#%e7%bd%91%e5%9d%80%e5%92%8cemail%e5%9c%b0%e5%9d%80&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;网址和Email地址
+&lt;/h3&gt;&lt;p&gt;使用尖括号可以很方便地把URL或者email地址变成可点击的链接。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;https://markdown.com.cn&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;fake@example.com&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://markdown.com.cn(opens new window)&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;mailto:fake@example.com&#34; &gt;fake@example.com&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxlinkshtml带格式化的链接带格式化的链接&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/links.html#%e5%b8%a6%e6%a0%bc%e5%bc%8f%e5%8c%96%e7%9a%84%e9%93%be%e6%8e%a5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;带格式化的链接
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/links.html#emphasis&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;强调&lt;/a&gt; 链接, 在链接语法前后增加星号。 要将链接表示为代码，请在方括号中添加反引号。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;I love supporting the **[EFF](https://eff.org)**.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;This is the *[Markdown Guide](https://www.markdownguide.org)*.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;See the section on [`code`](#code).
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;p&gt;I love supporting the &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://eff.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;EFF (opens new window)&lt;/a&gt;&lt;/strong&gt;.
+This is the &lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.markdownguide.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown Guide (opens new window)&lt;/a&gt;&lt;/em&gt;.
+See the section on &lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/links.html#code&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;code&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxlinkshtml引用类型链接引用类型链接&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/links.html#%e5%bc%95%e7%94%a8%e7%b1%bb%e5%9e%8b%e9%93%be%e6%8e%a5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;引用类型链接
+&lt;/h3&gt;&lt;p&gt;引用样式链接是一种特殊的链接，它使URL在Markdown中更易于显示和阅读。参考样式链接分为两部分：与文本保持内联的部分以及存储在文件中其他位置的部分，以使文本易于阅读。&lt;/p&gt;
+&lt;h4 id=&#34;httpsmarkdowncomcnbasic-syntaxlinkshtml链接的第一部分格式链接的第一部分格式&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/links.html#%e9%93%be%e6%8e%a5%e7%9a%84%e7%ac%ac%e4%b8%80%e9%83%a8%e5%88%86%e6%a0%bc%e5%bc%8f&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;链接的第一部分格式
+&lt;/h4&gt;&lt;p&gt;引用类型的链接的第一部分使用两组括号进行格式设置。第一组方括号包围应显示为链接的文本。第二组括号显示了一个标签，该标签用于指向您存储在文档其他位置的链接。&lt;/p&gt;
+&lt;p&gt;尽管不是必需的，可以在第一组和第二组括号之间包含一个空格。第二组括号中的标签不区分大小写，可以包含字母，数字，空格或标点符号。&lt;/p&gt;
+&lt;p&gt;以下示例格式对于链接的第一部分效果相同：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[hobbit-hole][1]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[hobbit-hole] [1]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;httpsmarkdowncomcnbasic-syntaxlinkshtml链接的第二部分格式链接的第二部分格式&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/links.html#%e9%93%be%e6%8e%a5%e7%9a%84%e7%ac%ac%e4%ba%8c%e9%83%a8%e5%88%86%e6%a0%bc%e5%bc%8f&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;链接的第二部分格式
+&lt;/h4&gt;&lt;p&gt;引用类型链接的第二部分使用以下属性设置格式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;放在括号中的标签，其后紧跟一个冒号和至少一个空格（例如&lt;code&gt;[label]:&lt;/code&gt;）。&lt;/li&gt;
+&lt;li&gt;链接的URL，可以选择将其括在尖括号中。&lt;/li&gt;
+&lt;li&gt;链接的可选标题，可以将其括在双引号，单引号或括号中。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以下示例格式对于链接的第二部分效果相同：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle &amp;quot;Hobbit lifestyles&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle &#39;Hobbit lifestyles&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle (Hobbit lifestyles)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[1]: &amp;lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&amp;gt; &amp;quot;Hobbit lifestyles&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[1]: &amp;lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&amp;gt; &#39;Hobbit lifestyles&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[1]: &amp;lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&amp;gt; (Hobbit lifestyles)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;可以将链接的第二部分放在Markdown文档中的任何位置。有些人将它们放在出现的段落之后，有些人则将它们放在文档的末尾（例如尾注或脚注）。&lt;/p&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxlinkshtml链接最佳实践链接最佳实践&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/links.html#%e9%93%be%e6%8e%a5%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;链接最佳实践
+&lt;/h3&gt;&lt;p&gt;不同的 Markdown 应用程序处理URL中间的空格方式不一样。为了兼容性，请尽量使用%20代替空格。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;✅ Do this&lt;/th&gt;
+          &lt;th&gt;❌ Don&amp;rsquo;t do this&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;code&gt;[link](https://www.example.com/my%20great%20page)&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;[link](https://www.example.com/my great page)&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;10markdown-图片语法&#34;&gt;10.Markdown 图片语法
+&lt;/h1&gt;&lt;p&gt;要添加图像，请使用感叹号 (&lt;code&gt;!&lt;/code&gt;), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。&lt;/p&gt;
+&lt;p&gt;插入图片Markdown语法代码：&lt;code&gt;![图片alt](图片链接 &amp;quot;图片title&amp;quot;)&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;对应的HTML代码：&lt;code&gt;&amp;lt;img src=&amp;quot;图片链接&amp;quot; alt=&amp;quot;图片alt&amp;quot; title=&amp;quot;图片title&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![这是图片](/assets/img/philly-magic-garden.jpg &amp;#34;Magic Gardens&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://markdown.com.cn/assets/img/philly-magic-garden.9c0b4415.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;这是图片&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaximageshtml链接图片链接图片&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/images.html#%e9%93%be%e6%8e%a5%e5%9b%be%e7%89%87&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;链接图片
+&lt;/h3&gt;&lt;p&gt;给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[![沙漠中的岩石图片](/assets/img/shiprock.jpg &amp;#34;Shiprock&amp;#34;)](https://markdown.com.cn)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://markdown.com.cn/assets/img/shiprock.c3b9a023.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;沙漠中的岩石图片&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;11markdown-转义字符语法&#34;&gt;11.Markdown 转义字符语法
+&lt;/h1&gt;&lt;p&gt;要显示原本用于格式化 Markdown 文档的字符，请在字符前面添加反斜杠字符 \ 。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\* Without the backslash, this would be a bullet in an unordered list.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下：&lt;/p&gt;
+&lt;p&gt;* Without the backslash, this would be a bullet in an unordered list.&lt;/p&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxescaping-charactershtml可做转义的字符可做转义的字符&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/escaping-characters.html#%e5%8f%af%e5%81%9a%e8%bd%ac%e4%b9%89%e7%9a%84%e5%ad%97%e7%ac%a6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;可做转义的字符
+&lt;/h3&gt;&lt;p&gt;以下列出的字符都可以通过使用反斜杠字符从而达到转义目的。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Character&lt;/th&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;\&lt;/td&gt;
+          &lt;td&gt;backslash&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;`&lt;/td&gt;
+          &lt;td&gt;backtick (see also &lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/escaping-characters.html#escaping-backticks&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;escaping backticks in code&lt;/a&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;*&lt;/td&gt;
+          &lt;td&gt;asterisk&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;_&lt;/td&gt;
+          &lt;td&gt;underscore&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;{ }&lt;/td&gt;
+          &lt;td&gt;curly braces&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[ ]&lt;/td&gt;
+          &lt;td&gt;brackets&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;( )&lt;/td&gt;
+          &lt;td&gt;parentheses&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;#&lt;/td&gt;
+          &lt;td&gt;pound sign&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;+&lt;/td&gt;
+          &lt;td&gt;plus sign&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;-&lt;/td&gt;
+          &lt;td&gt;minus sign (hyphen)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;.&lt;/td&gt;
+          &lt;td&gt;dot&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;!&lt;/td&gt;
+          &lt;td&gt;exclamation mark&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;|&lt;/td&gt;
+          &lt;td&gt;pipe (see also &lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/extended-syntax/escaping-pipe-characters-in-tables.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;escaping pipe in tables&lt;/a&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;httpsmarkdowncomcnbasic-syntaxescaping-charactershtml特殊字符自动转义特殊字符自动转义&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/escaping-characters.html#%e7%89%b9%e6%ae%8a%e5%ad%97%e7%ac%a6%e8%87%aa%e5%8a%a8%e8%bd%ac%e4%b9%89&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;特殊字符自动转义
+&lt;/h2&gt;&lt;p&gt;在 HTML 文件中，有两个字符需要特殊处理： &lt;code&gt;&amp;lt;&lt;/code&gt; 和 &lt;code&gt;&amp;amp;&lt;/code&gt; 。 &lt;code&gt;&amp;lt;&lt;/code&gt; 符号用于起始标签，&lt;code&gt;&amp;amp;&lt;/code&gt; 符号则用于标记 HTML 实体，如果你只是想要使用这些符号，你必须要使用实体的形式，像是 &lt;code&gt;&amp;lt;&lt;/code&gt; 和 &lt;code&gt;&amp;amp;&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;amp;&lt;/code&gt; 符号其实很容易让写作网页文件的人感到困扰，如果你要打「AT&amp;amp;T」 ，你必须要写成「&lt;code&gt;AT&amp;amp;T&lt;/code&gt;」 ，还得转换网址内的 &lt;code&gt;&amp;amp;&lt;/code&gt; 符号，如果你要链接到：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;http://images.google.com/images?num=30&amp;amp;q=larry+bird
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;你必须要把网址转成：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;http://images.google.com/images?num=30&amp;amp;amp;q=larry+bird
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;才能放到链接标签的 &lt;code&gt;href&lt;/code&gt; 属性里。不用说也知道这很容易忘记，这也可能是 HTML 标准检查所检查到的错误中，数量最多的。&lt;/p&gt;
+&lt;p&gt;Markdown 允许你直接使用这些符号，它帮你自动转义字符。如果你使用 &lt;code&gt;&amp;amp;&lt;/code&gt; 符号的作为 HTML 实体的一部分，那么它不会被转换，而在其它情况下，它则会被转换成 &lt;code&gt;&amp;amp;&lt;/code&gt;。所以你如果要在文件中插入一个著作权的符号，你可以这样写：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;amp;copy;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Markdown 将不会对这段文字做修改，但是如果你这样写：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;AT&amp;amp;T
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Markdown 就会将它转为：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;AT&amp;amp;amp;T
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;类似的状况也会发生在 &lt;code&gt;&amp;lt;&lt;/code&gt; 符号上，因为 Markdown 支持 &lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/#%e5%86%85%e8%81%94-html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;行内 HTML&lt;/a&gt; ，如果你使用 &lt;code&gt;&amp;lt;&lt;/code&gt; 符号作为 HTML 标签的分隔符，那 Markdown 也不会对它做任何转换，但是如果你是写：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;4 &amp;lt; 5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Markdown 将会把它转换为：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;4 &amp;amp;lt; 5
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;需要特别注意的是，在 Markdown 的块级元素和内联元素中， &lt;code&gt;&amp;lt;&lt;/code&gt; 和 &lt;code&gt;&amp;amp;&lt;/code&gt; 两个符号都会被自动转换成 HTML 实体，这项特性让你可以很容易地用 Markdown 写 HTML。（在 HTML 语法中，你要手动把所有的 &lt;code&gt;&amp;lt;&lt;/code&gt; 和 &lt;code&gt;&amp;amp;&lt;/code&gt; 都转换为 HTML 实体。）&lt;/p&gt;
+&lt;h1 id=&#34;12markdown-内嵌-html-标签&#34;&gt;12.Markdown 内嵌 HTML 标签
+&lt;/h1&gt;&lt;p&gt;对于 Markdown 涵盖范围之外的标签，都可以直接在文件里面用 HTML 本身。如需使用 HTML，不需要额外标注这是 HTML 或是 Markdown，只需 HTML 标签添加到 Markdown 文本中即可。&lt;/p&gt;
+&lt;h2 id=&#34;httpsmarkdowncomcnbasic-syntaxhtmlshtml行级內联标签行级內联标签&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/htmls.html#%e8%a1%8c%e7%ba%a7%e5%85%a7%e8%81%94%e6%a0%87%e7%ad%be&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;行级內联标签
+&lt;/h2&gt;&lt;p&gt;HTML 的行级內联标签如 &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;del&amp;gt;&lt;/code&gt; 不受限制，可以在 Markdown 的段落、列表或是标题里任意使用。依照个人习惯，甚至可以不用 Markdown 格式，而采用 HTML 标签来格式化。例如：如果比较喜欢 HTML 的 &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt; 或 &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图片语法。当你需要更改元素的属性时（例如为文本指定颜色或更改图像的宽度），使用 HTML 标签更方便些。&lt;/p&gt;
+&lt;p&gt;HTML 行级內联标签和区块标签不同，在內联标签的范围内， Markdown 的语法是可以解析的。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;This **word** is bold. This &amp;lt;em&amp;gt;word&amp;lt;/em&amp;gt; is italic.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;渲染效果如下:&lt;/p&gt;
+&lt;p&gt;This &lt;strong&gt;word&lt;/strong&gt; is bold. This &lt;em&gt;word&lt;/em&gt; is italic.&lt;/p&gt;
+&lt;h2 id=&#34;httpsmarkdowncomcnbasic-syntaxhtmlshtml区块标签区块标签&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/htmls.html#%e5%8c%ba%e5%9d%97%e6%a0%87%e7%ad%be&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;区块标签
+&lt;/h2&gt;&lt;p&gt;区块元素──比如 &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; 等标签，必须在前后加上空行，以便于内容区分。而且这些元素的开始与结尾标签，不可以用 tab 或是空白来缩进。Markdown 会自动识别这区块元素，避免在区块标签前后加上没有必要的 &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; 标签。&lt;/p&gt;
+&lt;p&gt;例如，在 Markdown 文件里加上一段 HTML 表格：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;This is a regular paragraph.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;table&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;tr&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;/tr&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/table&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;This is another regular paragraph.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;请注意，Markdown 语法在 HTML 区块标签中将不会被进行处理。例如，你无法在 HTML 区块内使用 Markdown 形式的&lt;code&gt;*强调*&lt;/code&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;httpsmarkdowncomcnbasic-syntaxhtmlshtmlhtml-用法最佳实践html-用法最佳实践&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/htmls.html#html-%e7%94%a8%e6%b3%95%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;#&lt;/a&gt;HTML 用法最佳实践
+&lt;/h3&gt;&lt;p&gt;出于安全原因，并非所有 Markdown 应用程序都支持在 Markdown 文档中添加 HTML。如有疑问，请查看相应 Markdown 应用程序的手册。某些应用程序只支持 HTML 标签的子集。&lt;/p&gt;
+&lt;p&gt;对于 HTML 的块级元素 &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;、&lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; 和 &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;，请在其前后使用空行（blank lines）与其它内容进行分隔。尽量不要使用制表符（tabs）或空格（spaces）对 HTML 标签做缩进，否则将影响格式。&lt;/p&gt;
+&lt;p&gt;在 HTML 块级标签内不能使用 Markdown 语法。例如 &lt;code&gt;&amp;lt;p&amp;gt;italic and **bold**&amp;lt;/p&amp;gt;&lt;/code&gt; 将不起作用。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>第三批测试文章</title>
+        <link>https://tanjiangweng.github.io/p/%E7%AC%AC%E4%B8%89%E6%89%B9%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</link>
+        <pubDate>Sun, 19 Jan 2025 21:43:04 +0800</pubDate>
+        
+        <guid>https://tanjiangweng.github.io/p/%E7%AC%AC%E4%B8%89%E6%89%B9%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>第二篇测试文章</title>
+        <link>https://tanjiangweng.github.io/p/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</link>
+        <pubDate>Sun, 19 Jan 2025 21:07:42 +0800</pubDate>
+        
+        <guid>https://tanjiangweng.github.io/p/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</guid>
+        <description>&lt;p&gt;你好啊&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Newfiles</title>
+        <link>https://tanjiangweng.github.io/p/newfiles/</link>
+        <pubDate>Sun, 19 Jan 2025 20:08:36 +0800</pubDate>
+        
+        <guid>https://tanjiangweng.github.io/p/newfiles/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Myfirstblog</title>
+        <link>https://tanjiangweng.github.io/p/myfirstblog/</link>
+        <pubDate>Sun, 19 Jan 2025 13:18:18 +0800</pubDate>
+        
+        <guid>https://tanjiangweng.github.io/p/myfirstblog/</guid>
+        <description>&lt;h3 id=&#34;hello-world&#34;&gt;hello world
+&lt;/h3&gt;&lt;p&gt;你好啊&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Chinese Test</title>
         <link>https://tanjiangweng.github.io/p/test-chinese/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>

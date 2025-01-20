@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tanjiangweng.github.io/</loc>
-    <lastmod>2025-01-20T08:11:57+08:00</lastmod>
+    <lastmod>2025-01-20T08:58:55+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://tanjiangweng.github.io/post/</loc>
-    <lastmod>2025-01-20T08:11:57+08:00</lastmod>
+    <lastmod>2025-01-20T08:58:55+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -27,6 +27,24 @@
                 hreflang="zh-cn"
                 href="https://tanjiangweng.github.io/post/"
                 />
+  </url><url>
+    <loc>https://tanjiangweng.github.io/p/%E6%8E%A2%E7%B4%A2%E6%96%87%E4%BB%B6/</loc>
+    <lastmod>2025-01-20T08:58:55+08:00</lastmod>
+  </url><url>
+    <loc>https://tanjiangweng.github.io/p/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2025-01-20T08:11:57+08:00</lastmod>
+  </url><url>
+    <loc>https://tanjiangweng.github.io/p/%E7%AC%AC%E4%B8%89%E6%89%B9%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2025-01-19T21:43:04+08:00</lastmod>
+  </url><url>
+    <loc>https://tanjiangweng.github.io/p/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2025-01-19T21:07:42+08:00</lastmod>
+  </url><url>
+    <loc>https://tanjiangweng.github.io/p/newfiles/</loc>
+    <lastmod>2025-01-19T20:08:36+08:00</lastmod>
+  </url><url>
+    <loc>https://tanjiangweng.github.io/p/myfirstblog/</loc>
+    <lastmod>2025-01-19T13:18:18+08:00</lastmod>
   </url><url>
     <loc>https://tanjiangweng.github.io/categories/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>

@@ -11,6 +11,16 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="disqus"
+                href="https://tanjiangweng.github.io/disqus/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="googleanalytics"
+                href="https://tanjiangweng.github.io/googleanalytics/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://tanjiangweng.github.io/en/categories/"
                 />
@@ -63,6 +73,16 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="disqus"
+                href="https://tanjiangweng.github.io/disqus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="googleanalytics"
+                href="https://tanjiangweng.github.io/googleanalytics/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://tanjiangweng.github.io/en/"
                 />
@@ -85,6 +105,16 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://tanjiangweng.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="disqus"
+                href="https://tanjiangweng.github.io/disqus/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="googleanalytics"
+                href="https://tanjiangweng.github.io/googleanalytics/tags/"
                 />
     <xhtml:link
                 rel="alternate"

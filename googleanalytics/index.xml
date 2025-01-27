@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>檀江翁</title>
+        <link>https://tanjiangweng.github.io/googleanalytics/</link>
+        <description>Recent content on 檀江翁</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>googleanalytics</language>
+        <copyright>檀江翁-tanjiangweng copyright</copyright><atom:link href="https://tanjiangweng.github.io/googleanalytics/index.xml" rel="self" type="application/rss+xml" />
+    </channel>
+</rss>

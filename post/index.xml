@@ -7,7 +7,425 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>檀江翁-tanjiangweng copyright</copyright>
-        <lastBuildDate>Mon, 20 Jan 2025 10:51:47 +0800</lastBuildDate><atom:link href="https://tanjiangweng.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 27 Jan 2025 20:15:45 +0800</lastBuildDate><atom:link href="https://tanjiangweng.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Git学习笔记</title>
+        <link>https://tanjiangweng.github.io/p/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+        <pubDate>Mon, 27 Jan 2025 20:15:45 +0800</pubDate>
+        
+        <guid>https://tanjiangweng.github.io/p/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+        <description>&lt;h1 id=&#34;git学习笔记&#34;&gt;git学习笔记
+&lt;/h1&gt;&lt;h2 id=&#34;git常用命令&#34;&gt;git常用命令
+&lt;/h2&gt;&lt;h4 id=&#34;1配置个人信息&#34;&gt;1.配置个人信息
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --global user.name &lt;span class=&#34;s2&#34;&gt;&amp;#34;你的名字&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git congig --global user.email &lt;span class=&#34;s2&#34;&gt;&amp;#34;你的邮箱&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;/p&gt;
+&lt;p&gt;设置“署名”，每次提交时都会标明是谁的贡献&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;2ssh配置&#34;&gt;2.SSH配置
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;生成ssh密钥&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh-keygen -t rsa -C &amp;#34;你的邮箱&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;==-t rsa:==:使用RSA算法生成密钥&lt;/li&gt;
+&lt;li&gt;==-C==：添加备注，通常是你的邮箱地址（&lt;!--pub是公钥，rsa是私钥，私钥不能泄露--&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;添加公钥到远程仓库&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;github&lt;/li&gt;
+&lt;li&gt;gitee&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;测试连接&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh -T git@github.com
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh -T git@gitee.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;配置多个 SSH 密钥（可选）&lt;/p&gt;
+&lt;p&gt;如果同时使⽤ GitHub 和 Gitee，可以为它们配置不同的 SSH 密钥。&lt;/p&gt;
+&lt;p&gt;在 ~/.ssh/config ⽂件中添加以下内容：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Host github.com
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;HostName github.com
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;User git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;IdentityFile ~/.ssh/id_rsa
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Host gitee.com
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;HostName gitee.com
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;User git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;IdentityFile ~/.ssh/id_rsa_gitee
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;git实际操作指令&#34;&gt;git实际操作指令
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;初始化仓库&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init                              --初始化仓库  新建一本“时光机日记本”，准备开始记录代码版本。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add 文件名                         --添加文件到暂存区  把草稿整理好，发到准备提交的草稿箱里面
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &amp;#34;提交说明/注释&amp;#34;          --提交到本地仓库  把草稿正式写入日记本，并附上说明
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push origin 分支名                 --推送代码到远程仓库   把本地代码同步到远程仓库
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone 仓库地址                     --克隆远程仓库    下载别人的仓库到本地
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git status                             --查看状态    检查当前代码的变化情况
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git log                               --查看提交历史    查看代码的提交记录，回顾开发的时间线
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git branch 分支名                       --创建分支   为不同功能开发创建独立章节，不干扰主线内容
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git checkout 分支名                      --切换分支  从一个部门换到另一个部门
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git merge 分支名                          --合并分支  把不同章节的内容合并到主线
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git pull origin 分支名                    --拉取代码    从远程仓库拉取最新代码
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;以下是便于复制的区域&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add 文件名
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &amp;#34;提交说明/注释&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push origin 分支名
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone 仓库地址
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git status
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git log
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git branch 分支名
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git checkout 分支名
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git merge 分支名
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git pull origin 分支名
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;以下是对这些常见Git命令的详细解读：&lt;/p&gt;
+&lt;h3 id=&#34;1-git-init&#34;&gt;1. &lt;code&gt;git init&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：初始化一个新的Git仓库。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：此命令会在当前目录下创建一个 &lt;code&gt;.git&lt;/code&gt; 目录，这个目录包含了Git的所有版本控制信息。执行 &lt;code&gt;git init&lt;/code&gt; 后，当前目录就变成了一个Git仓库，准备开始版本控制。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：创建一个空的Git仓库，Git会开始跟踪该目录中的所有文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-git-add-文件名&#34;&gt;2. &lt;code&gt;git add 文件名&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：将指定的文件添加到Git的暂存区。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git add&lt;/code&gt; 命令告诉Git哪些文件需要纳入版本控制的范围。&lt;code&gt;文件名&lt;/code&gt; 是要添加的具体文件名称。可以是一个文件、多个文件或者一个目录。例如：&lt;code&gt;git add README.md&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：文件被添加到暂存区，准备进行提交。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-git-commit--m-提交说明注释&#34;&gt;3. &lt;code&gt;git commit -m &amp;quot;提交说明/注释&amp;quot;&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：将暂存区的文件提交到本地仓库，并附带一条提交信息。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git commit&lt;/code&gt; 命令将已经添加到暂存区的文件（通过 &lt;code&gt;git add&lt;/code&gt;）提交到本地仓库。&lt;code&gt;-m&lt;/code&gt; 后面跟的是这次提交的描述信息，通常是简短明了的说明，告诉别人或自己这次提交的目的。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：文件提交到本地Git仓库，版本历史中加入了这次提交。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-git-push-origin-分支名&#34;&gt;4. &lt;code&gt;git push origin 分支名&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：将本地仓库的指定分支推送到远程仓库。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git push&lt;/code&gt; 命令将本地分支的更改推送到远程仓库。&lt;code&gt;origin&lt;/code&gt; 是远程仓库的默认名称，&lt;code&gt;分支名&lt;/code&gt; 是你要推送的本地分支名称。例如：&lt;code&gt;git push origin main&lt;/code&gt; 会将本地的 &lt;code&gt;main&lt;/code&gt; 分支推送到远程仓库。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：将本地分支的更改推送到远程仓库，并同步远程分支。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;5-git-clone-仓库地址&#34;&gt;5. &lt;code&gt;git clone 仓库地址&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：克隆一个远程Git仓库到本地。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git clone&lt;/code&gt; 命令用来复制一个远程仓库的完整副本，包括所有的历史记录和分支。&lt;code&gt;仓库地址&lt;/code&gt; 是远程仓库的URL（例如：https://github.com/username/repo.git）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：在本地创建一个与远程仓库相同的目录，并将远程仓库的内容复制过来。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;6-git-status&#34;&gt;6. &lt;code&gt;git status&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：查看工作区和暂存区的状态。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git status&lt;/code&gt; 命令会显示当前工作区和暂存区的状态。它会列出哪些文件有更改、哪些文件已加入暂存区、哪些文件尚未跟踪等信息。它不会对仓库做出任何修改。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：显示当前文件的修改状态，帮助用户了解哪些文件已经修改、哪些文件还没有提交。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;7-git-log&#34;&gt;7. &lt;code&gt;git log&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：查看提交历史。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git log&lt;/code&gt; 命令显示Git仓库的提交历史，包括每次提交的提交ID、提交作者、提交时间、提交信息等。如果加上参数 &lt;code&gt;--oneline&lt;/code&gt;，会以简洁的方式显示每个提交的ID和说明。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：输出当前分支的提交历史记录，帮助了解项目的历史进展。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;8-git-branch-分支名&#34;&gt;8. &lt;code&gt;git branch 分支名&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：创建一个新的分支。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git branch&lt;/code&gt; 命令用于列出、创建或删除分支。&lt;code&gt;分支名&lt;/code&gt; 是新分支的名称。使用此命令创建一个新分支，但不会自动切换到该分支。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：创建一个新的分支，并且不会切换到该分支。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;9-git-checkout-分支名&#34;&gt;9. &lt;code&gt;git checkout 分支名&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：切换到指定的分支。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git checkout&lt;/code&gt; 命令用于切换到指定的分支。你可以用它来切换到已经存在的其他分支，或者用它来恢复文件到某个特定的版本。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：切换到指定的分支。如果目标分支不存在，需要先创建它。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;10-git-merge-分支名&#34;&gt;10. &lt;code&gt;git merge 分支名&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：将指定分支的更改合并到当前分支。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git merge&lt;/code&gt; 命令将指定的分支合并到当前分支。例如，如果你正在 &lt;code&gt;main&lt;/code&gt; 分支上，并且要将 &lt;code&gt;feature&lt;/code&gt; 分支的更改合并进来，可以使用 &lt;code&gt;git merge feature&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：将目标分支的所有更改合并到当前分支，可能会出现冲突，需要手动解决。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;11-git-pull-origin-分支名&#34;&gt;11. &lt;code&gt;git pull origin 分支名&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：从远程仓库拉取指定分支的更改并合并到当前分支。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git pull&lt;/code&gt; 命令用于从远程仓库拉取最新的代码并自动与当前分支合并。&lt;code&gt;origin&lt;/code&gt; 是远程仓库的名称，&lt;code&gt;分支名&lt;/code&gt; 是你要拉取的分支。如果当前分支与远程分支存在冲突，Git会提示你手动解决。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：将远程仓库的指定分支拉取到本地，并自动进行合并。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;总结&#34;&gt;总结：
+&lt;/h3&gt;&lt;p&gt;这些命令是Git日常使用中的基础命令，帮助管理代码的版本控制、分支管理、远程仓库同步等。理解和熟练使用这些命令是成为Git高手的基础。如果你有特定的操作或想要进一步了解某个命令的细节，随时告诉我！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;搭建一个仓库并于远程仓库连接的过程：（以github为例）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;git init 创建本地仓库，并在GitHub或Gitee上面创建云端仓库&lt;/li&gt;
+&lt;li&gt;git add README.md  创建一个说明文件&lt;/li&gt;
+&lt;li&gt;git commit -m “first commit”提交到本地仓库，并给予说明&lt;/li&gt;
+&lt;li&gt;git  branch  -M main  创建主体根系&lt;/li&gt;
+&lt;li&gt;git remote add add origin 仓库地址   与远程仓库进行连接&lt;/li&gt;
+&lt;li&gt;git push -u origin main  把主支推送到云端&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://tanjiangweng.github.io/assets/image-20250127192311697.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20250127192311697&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这段代码是在初始化一个新的Git仓库并将其推送到GitHub上的远程仓库。下面是对每行代码的详细解读：&lt;/p&gt;
+&lt;h3 id=&#34;1-echo--new--readmemd&#34;&gt;1. &lt;code&gt;echo &amp;quot;# new&amp;quot; &amp;gt;&amp;gt; README.md&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：这行命令会将文本 &lt;code&gt;# new&lt;/code&gt; 写入到 &lt;code&gt;README.md&lt;/code&gt; 文件中。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;echo&lt;/code&gt; 命令用于打印文本，&lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt; 用于将输出追加到文件末尾。如果 &lt;code&gt;README.md&lt;/code&gt; 文件不存在，它会创建一个新的文件并将文本写入其中。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：&lt;code&gt;README.md&lt;/code&gt; 文件的内容将是 &lt;code&gt;# new&lt;/code&gt;，通常用于描述项目的标题或名称。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-git-init&#34;&gt;2. &lt;code&gt;git init&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：初始化一个新的Git仓库。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：此命令会在当前目录下创建一个 &lt;code&gt;.git&lt;/code&gt; 目录，这个目录用来存储所有Git跟踪的信息，包括版本历史、配置等。执行此命令后，该目录会被标记为一个Git仓库。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：创建一个空的Git仓库，准备进行版本控制。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-git-add-readmemd&#34;&gt;3. &lt;code&gt;git add README.md&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：将 &lt;code&gt;README.md&lt;/code&gt; 文件添加到Git暂存区。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git add&lt;/code&gt; 命令将指定的文件加入暂存区（Staging Area），即告诉Git你已经修改了这个文件，准备将它提交到版本历史中。在这个命令中，&lt;code&gt;README.md&lt;/code&gt; 是要添加到暂存区的文件。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：&lt;code&gt;README.md&lt;/code&gt; 文件准备好提交。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-git-commit--m-first-commit&#34;&gt;4. &lt;code&gt;git commit -m &amp;quot;first commit&amp;quot;&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：提交暂存区的文件并附加提交信息。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git commit&lt;/code&gt; 命令会将暂存区的文件（即已经用 &lt;code&gt;git add&lt;/code&gt; 添加的文件）提交到本地Git仓库，并记录一个提交信息。&lt;code&gt;-m&lt;/code&gt; 后面的 &lt;code&gt;&amp;quot;first commit&amp;quot;&lt;/code&gt; 是你为这个提交写的描述信息，通常用于简短描述这次提交的目的或更改。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：&lt;code&gt;README.md&lt;/code&gt; 文件被提交到本地Git仓库，且提交信息为 &lt;code&gt;first commit&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;5-git-branch--m-main&#34;&gt;5. &lt;code&gt;git branch -M main&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：将当前分支重命名为 &lt;code&gt;main&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：默认情况下，Git会创建一个名为 &lt;code&gt;master&lt;/code&gt; 的分支。&lt;code&gt;git branch -M main&lt;/code&gt; 命令会将当前分支重命名为 &lt;code&gt;main&lt;/code&gt;。&lt;code&gt;-M&lt;/code&gt; 参数表示强制重命名，即使目标名称已存在。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：将当前分支的名称更改为 &lt;code&gt;main&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;6-git-remote-add-origin-httpsgithubcomtanjiangwengnewgit&#34;&gt;6. &lt;code&gt;git remote add origin https://github.com/tanjiangweng/new.git&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：添加远程仓库。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git remote add origin&lt;/code&gt; 命令将一个远程Git仓库添加到本地仓库的配置中。&lt;code&gt;origin&lt;/code&gt; 是远程仓库的默认名称，后面的URL &lt;code&gt;https://github.com/tanjiangweng/new.git&lt;/code&gt; 是远程仓库的地址。该命令让Git知道要将代码推送到这个GitHub上的仓库。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：将远程仓库链接到本地仓库，使得本地的更改可以推送到远程仓库。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;7-git-push--u-origin-main&#34;&gt;7. &lt;code&gt;git push -u origin main&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：将本地 &lt;code&gt;main&lt;/code&gt; 分支的提交推送到远程仓库。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;解释&lt;/strong&gt;：&lt;code&gt;git push&lt;/code&gt; 命令将本地的提交推送到远程仓库，&lt;code&gt;-u&lt;/code&gt; 参数会将本地的 &lt;code&gt;main&lt;/code&gt; 分支与远程仓库的 &lt;code&gt;main&lt;/code&gt; 分支关联起来，这样以后你可以直接使用 &lt;code&gt;git push&lt;/code&gt; 或 &lt;code&gt;git pull&lt;/code&gt; 命令，而不需要每次都指定远程分支。&lt;code&gt;origin&lt;/code&gt; 是远程仓库的名称，&lt;code&gt;main&lt;/code&gt; 是你要推送的本地分支。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：将本地 &lt;code&gt;main&lt;/code&gt; 分支的提交推送到 GitHub 上的远程仓库，并建立起本地分支与远程分支的关联。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;总结-1&#34;&gt;总结：
+&lt;/h3&gt;&lt;p&gt;这段代码的整体流程是：首先创建一个新的Git仓库并添加文件，提交到本地Git仓库，然后将本地仓库与GitHub上的远程仓库关联，最后将代码推送到远程仓库。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;使用可视化git管理软件sourcetree&#34;&gt;使用可视化git管理软件sourcetree
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;暂存改动文件&lt;/li&gt;
+&lt;li&gt;在文件状态里面写入说明，提交，再推送&lt;/li&gt;
+&lt;li&gt;若想恢复删除文件，可右键强行合并&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;SourceTree&lt;/strong&gt; 是一个由 Atlassian 提供的免费的 Git 和 Mercurial 图形化客户端，专门为开发者提供一个简洁而直观的方式来管理版本控制。下面是关于 SourceTree 的使用教程，适用于 Git 操作。&lt;/p&gt;
+&lt;h3 id=&#34;1-下载与安装-sourcetree&#34;&gt;1. &lt;strong&gt;下载与安装 SourceTree&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;前往 SourceTree 官方网站：https://www.sourcetreeapp.com/，选择适合操作系统（Windows/macOS）的版本进行下载并安装。&lt;/li&gt;
+&lt;li&gt;安装过程中会提示你是否安装 Git（如果你系统中没有安装 Git），选择安装即可。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-配置-sourcetree&#34;&gt;2. &lt;strong&gt;配置 SourceTree&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;首次启动&lt;/p&gt;
+&lt;p&gt;：启动 SourceTree 后，会提示你配置 Git 和 Mercurial 的相关设置。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;输入你的 &lt;strong&gt;姓名&lt;/strong&gt; 和 &lt;strong&gt;电子邮件&lt;/strong&gt;，这些信息会出现在你提交的记录中。&lt;/li&gt;
+&lt;li&gt;你也可以选择连接到你的 &lt;strong&gt;GitHub&lt;/strong&gt;、&lt;strong&gt;Bitbucket&lt;/strong&gt; 或 &lt;strong&gt;GitLab&lt;/strong&gt; 帐户，便于直接与远程仓库进行交互。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-创建一个新仓库&#34;&gt;3. &lt;strong&gt;创建一个新仓库&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;新建本地仓库&lt;/p&gt;
+&lt;p&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;点击 SourceTree 界面左上方的 &lt;strong&gt;&amp;ldquo;新建&amp;rdquo;&lt;/strong&gt; 按钮。&lt;/li&gt;
+&lt;li&gt;在弹出的对话框中选择 &lt;strong&gt;&amp;ldquo;创建本地仓库&amp;rdquo;&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;选择你希望创建仓库的目录，点击 &lt;strong&gt;&amp;ldquo;创建&amp;rdquo;&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;这会在指定的文件夹中创建一个 Git 仓库，SourceTree 会自动识别并显示该仓库。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-克隆远程仓库&#34;&gt;4. &lt;strong&gt;克隆远程仓库&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;从 GitHub、Bitbucket 等仓库克隆&lt;/p&gt;
+&lt;p&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;点击 SourceTree 界面左上方的 &lt;strong&gt;&amp;ldquo;克隆 / 新建&amp;rdquo;&lt;/strong&gt; 按钮。&lt;/li&gt;
+&lt;li&gt;在弹出窗口的 &lt;strong&gt;&amp;ldquo;克隆&amp;rdquo;&lt;/strong&gt; 选项卡中，输入远程仓库的 &lt;strong&gt;URL&lt;/strong&gt;，可以从 GitHub、GitLab 等仓库网站获取 URL。&lt;/li&gt;
+&lt;li&gt;选择一个本地文件夹作为目标位置，并点击 &lt;strong&gt;&amp;ldquo;克隆&amp;rdquo;&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SourceTree 会自动下载仓库内容并为你创建本地仓库副本。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;5-基本操作&#34;&gt;5. &lt;strong&gt;基本操作&lt;/strong&gt;
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;查看当前工作区和暂存区&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;SourceTree 会显示工作区和暂存区的文件变更。已修改的文件会列出，未暂存的文件会标记为 &amp;ldquo;未暂存&amp;rdquo;。&lt;/li&gt;
+&lt;li&gt;你可以点击文件右键，选择 &lt;strong&gt;&amp;ldquo;暂存&amp;rdquo;&lt;/strong&gt;，将文件移入暂存区，或者 &lt;strong&gt;&amp;ldquo;丢弃更改&amp;rdquo;&lt;/strong&gt; 来撤销文件修改。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;提交修改（Commit）&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;在暂存区查看你想要提交的文件。勾选要提交的文件。&lt;/li&gt;
+&lt;li&gt;在 &lt;strong&gt;&amp;ldquo;提交&amp;rdquo;&lt;/strong&gt; 窗口中，输入提交信息。&lt;/li&gt;
+&lt;li&gt;点击 &lt;strong&gt;&amp;ldquo;提交&amp;rdquo;&lt;/strong&gt; 按钮完成提交操作。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;查看提交历史（Log）&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;点击 SourceTree 中的 &lt;strong&gt;&amp;ldquo;日志/历史&amp;rdquo;&lt;/strong&gt; 选项卡，查看提交历史。你可以看到每个提交的详细信息，包括提交信息、作者、时间等。&lt;/li&gt;
+&lt;li&gt;可以通过 &lt;strong&gt;&amp;ldquo;查看文件&amp;rdquo;&lt;/strong&gt; 查看某个提交中某个文件的修改。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;切换分支（Branch）&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;在左侧的 &lt;strong&gt;&amp;ldquo;分支&amp;rdquo;&lt;/strong&gt; 面板中，右键点击某个分支并选择 &lt;strong&gt;&amp;ldquo;切换到该分支&amp;rdquo;&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;你也可以选择 &lt;strong&gt;&amp;ldquo;新建分支&amp;rdquo;&lt;/strong&gt; 来创建一个新分支。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;6-与远程仓库交互&#34;&gt;6. &lt;strong&gt;与远程仓库交互&lt;/strong&gt;
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;拉取远程更改（Pull）&lt;/p&gt;
+&lt;p&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;点击 &lt;strong&gt;&amp;ldquo;拉取&amp;rdquo;&lt;/strong&gt; 按钮（在界面顶部），从远程仓库拉取最新的更改并合并到当前分支。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;推送本地更改（Push）&lt;/p&gt;
+&lt;p&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;点击 &lt;strong&gt;&amp;ldquo;推送&amp;rdquo;&lt;/strong&gt; 按钮，将你本地的提交推送到远程仓库。&lt;/li&gt;
+&lt;li&gt;你可以选择推送特定的分支，或者推送所有分支。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;7-合并分支merge&#34;&gt;7. &lt;strong&gt;合并分支（Merge）&lt;/strong&gt;
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;在左侧面板中，选择要合并的目标分支（例如，你想将一个功能分支合并到主分支）。&lt;/li&gt;
+&lt;li&gt;右键点击目标分支，选择 &lt;strong&gt;&amp;ldquo;合并&amp;rdquo;&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;如果存在冲突，SourceTree 会提示你解决冲突。你可以手动编辑冲突的文件，解决冲突后重新提交。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;8-处理冲突conflict&#34;&gt;8. &lt;strong&gt;处理冲突（Conflict）&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;如果你在合并、拉取或推送时遇到冲突，SourceTree 会通过红色警告提示你。&lt;/li&gt;
+&lt;li&gt;在 &lt;strong&gt;&amp;ldquo;冲突&amp;rdquo;&lt;/strong&gt; 面板中，你可以查看冲突的文件，点击右键选择 &lt;strong&gt;&amp;ldquo;解决冲突&amp;rdquo;&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;SourceTree 会显示冲突文件的三个部分：本地版本、远程版本和合并结果。你可以手动选择保留哪个版本或手动合并这些版本。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;9-标签tag管理&#34;&gt;9. &lt;strong&gt;标签（Tag）管理&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;创建标签&lt;/strong&gt;：你可以在某个提交上打上标签，用于标记特定的版本（比如发布版本）。点击 &lt;strong&gt;&amp;ldquo;创建标签&amp;rdquo;&lt;/strong&gt; 按钮并输入标签名。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;查看标签&lt;/strong&gt;：点击 &lt;strong&gt;&amp;ldquo;标签&amp;rdquo;&lt;/strong&gt; 面板查看仓库中已有的标签。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;10-查看变更diff&#34;&gt;10. &lt;strong&gt;查看变更（Diff）&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;在 &lt;strong&gt;&amp;ldquo;差异&amp;rdquo;&lt;/strong&gt; 面板中，查看你所做的修改。&lt;/li&gt;
+&lt;li&gt;可以选择 &lt;strong&gt;&amp;ldquo;查看文件&amp;rdquo;&lt;/strong&gt;，来查看具体的代码行变动。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;11-设置和个性化&#34;&gt;11. &lt;strong&gt;设置和个性化&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;你可以通过 SourceTree 的 &lt;strong&gt;设置&lt;/strong&gt; 页面自定义工具的行为，包括界面主题、自动刷新等。&lt;/li&gt;
+&lt;li&gt;例如，&lt;strong&gt;&amp;ldquo;偏好设置&amp;rdquo;&lt;/strong&gt; &amp;gt; &lt;strong&gt;&amp;ldquo;Git&amp;rdquo;&lt;/strong&gt; 可以设置默认 Git 执行路径或配置。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
         <title>Markdown基础语法</title>
         <link>https://tanjiangweng.github.io/p/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</link>
         <pubDate>Mon, 20 Jan 2025 10:51:47 +0800</pubDate>

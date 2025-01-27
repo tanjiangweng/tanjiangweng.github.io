@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tanjiangweng.github.io/</loc>
-    <lastmod>2025-01-20T10:51:47+08:00</lastmod>
+    <lastmod>2025-01-27T20:15:45+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -11,15 +11,25 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="disqus"
+                href="https://tanjiangweng.github.io/disqus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="googleanalytics"
+                href="https://tanjiangweng.github.io/googleanalytics/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="zh-cn"
                 href="https://tanjiangweng.github.io/"
                 />
   </url><url>
-    <loc>https://tanjiangweng.github.io/p/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2025-01-20T10:51:47+08:00</lastmod>
+    <loc>https://tanjiangweng.github.io/p/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2025-01-27T20:15:45+08:00</lastmod>
   </url><url>
     <loc>https://tanjiangweng.github.io/post/</loc>
-    <lastmod>2025-01-20T10:51:47+08:00</lastmod>
+    <lastmod>2025-01-27T20:15:45+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -31,6 +41,9 @@
                 href="https://tanjiangweng.github.io/post/"
                 />
   </url><url>
+    <loc>https://tanjiangweng.github.io/p/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2025-01-20T10:51:47+08:00</lastmod>
+  </url><url>
     <loc>https://tanjiangweng.github.io/p/myfirstblog/</loc>
     <lastmod>2025-01-19T13:18:18+08:00</lastmod>
   </url><url>
@@ -40,6 +53,16 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tanjiangweng.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="disqus"
+                href="https://tanjiangweng.github.io/disqus/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="googleanalytics"
+                href="https://tanjiangweng.github.io/googleanalytics/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -113,6 +136,16 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tanjiangweng.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="disqus"
+                href="https://tanjiangweng.github.io/disqus/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="googleanalytics"
+                href="https://tanjiangweng.github.io/googleanalytics/tags/"
                 />
     <xhtml:link
                 rel="alternate"

@@ -423,6 +423,26 @@
 &lt;li&gt;例如，&lt;strong&gt;&amp;ldquo;偏好设置&amp;rdquo;&lt;/strong&gt; &amp;gt; &lt;strong&gt;&amp;ldquo;Git&amp;rdquo;&lt;/strong&gt; 可以设置默认 Git 执行路径或配置。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
+&lt;h2 id=&#34;github主要功能介绍&#34;&gt;GitHub主要功能介绍
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://tanjiangweng.github.io/assets/image-20250127202328022.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20250127202328022&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Fork                                             复制项目到个人账户
+Star                                           收藏项目，便于以后查找
+Watch                                        订阅项目动态
+Issues                                        提交问题或建议，记录开发中的待办 事项
+Pull Request                               提交代码修改供原项目合并
+Actions                                           自动化 CI/CD 工作流
+Pages                                          托管静态网站（如博客或文档）
+Releases                                     发布稳定版本，提供下载
+Webhooks                                      自动消息通知&lt;/p&gt;
 </description>
         </item>
         <item>

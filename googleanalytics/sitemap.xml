@@ -2,70 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tanjiangweng.github.io/googleanalytics/categories/</loc>
+    <loc>http://localhost:1313/googleanalytics/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tanjiangweng.github.io/en/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://tanjiangweng.github.io/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="disqus"
-                href="https://tanjiangweng.github.io/disqus/categories/"
+                href="http://localhost:1313/disqus/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="googleanalytics"
-                href="https://tanjiangweng.github.io/googleanalytics/categories/"
+                href="http://localhost:1313/googleanalytics/categories/"
                 />
   </url><url>
-    <loc>https://tanjiangweng.github.io/googleanalytics/tags/</loc>
+    <loc>http://localhost:1313/googleanalytics/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tanjiangweng.github.io/en/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://tanjiangweng.github.io/tags/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="disqus"
-                href="https://tanjiangweng.github.io/disqus/tags/"
+                href="http://localhost:1313/disqus/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="googleanalytics"
-                href="https://tanjiangweng.github.io/googleanalytics/tags/"
+                href="http://localhost:1313/googleanalytics/tags/"
                 />
   </url><url>
-    <loc>https://tanjiangweng.github.io/googleanalytics/</loc>
+    <loc>http://localhost:1313/googleanalytics/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tanjiangweng.github.io/en/"
+                href="http://localhost:1313/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://tanjiangweng.github.io/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="disqus"
-                href="https://tanjiangweng.github.io/disqus/"
+                href="http://localhost:1313/disqus/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="googleanalytics"
-                href="https://tanjiangweng.github.io/googleanalytics/"
+                href="http://localhost:1313/googleanalytics/"
                 />
   </url>
 </urlset>

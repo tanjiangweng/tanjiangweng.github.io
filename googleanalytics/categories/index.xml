@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on 檀江翁</title>
-        <link>https://tanjiangweng.github.io/googleanalytics/categories/</link>
+        <link>http://localhost:1313/googleanalytics/categories/</link>
         <description>Recent content in Categories on 檀江翁</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>googleanalytics</language>
-        <copyright>檀江翁-tanjiangweng copyright</copyright><atom:link href="https://tanjiangweng.github.io/googleanalytics/categories/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>檀江翁-tanjiangweng copyright</copyright><atom:link href="http://localhost:1313/googleanalytics/categories/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
